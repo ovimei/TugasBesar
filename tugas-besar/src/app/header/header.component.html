@@ -1,0 +1,31 @@
+
+<div class="navbar" navbar navbar-inverse navbar-fixed-top style="background-color:wheat">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a  class="navbar-brand" style="cursor:pointer"> <span class="glyphicon glyphicon-send">TheUklam</span></a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li  routerLinkActive="active">
+          <a routerLink="/recipes"> <b>Destinations</b>  </a>
+        </li>
+        <li  routerLinkActive="active">
+          <a routerLink="/shopping-list"><b>Your Schedule</b></a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" appDropdown>
+          <a style="cursor:pointer" class="dropdown-toggle" role="button"> Manage <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          <li>
+            <a style="cursor:pointer" (click)="onSaveData()">Safe Data</a>
+          </li>
+          <li>
+            <a href="cursor:pointer">Fetch Data</a>
+          </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
